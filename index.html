@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper wrapper">
+
+        <div class="header-logo">
+          <svg class="header-logo__svg icon">
+            <use xlink:href="./assets/svg/sprite.svg#Логотип"></use>
+          </svg>
+        </div>
+
+        <div class="header-nav">
+          <ul class="header-nav__items">
+            <li class="header-nav__item">
+              <i class="nav-item__icon">
+                <svg class="icon">
+                  <use xlink:href="./assets/svg/sprite.svg#Iconsearch"></use>
+                </svg>
+                </i>Поиск</li>
+            <li class="header-nav__item">
+              <i class="nav-item__icon">
+                <svg class="icon">
+                  <use xlink:href="./assets/svg/sprite.svg#Iconphone"></use>
+                </svg>
+              </i>Контакты</li>
+            <li class="header-nav__item">
+              <i class="nav-item__icon">
+                <svg class="icon">
+                  <use xlink:href="./assets/svg/sprite.svg#Iconmap"></use>
+                </svg>
+              </i>Адрес</li>
+            <li class="header-nav__item">
+              <i class="nav-item__icon">
+                <svg class="icon">
+                  <use xlink:href="./assets/svg/sprite.svg#Iconcontact"></use>
+                </svg>
+              </i>Войти</li>
+            <li class="header-nav__item">RU</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-wrapper wrapper">
+        <h1 class="main-title">Создать бокс</h1>
+        <!-- ___TOP BLOCK -->
+        <div class="main__first-block">
+          <div class="main__filter-block">
+            
+            <h3 class="filter-block__title">
+              <i class="filter-item__icon">
+                <svg class="filter-icon">
+                  <use xlink:href="./assets/svg/sprite.svg#Iconsettings"></use>
+                </svg>
+              </i>
+              Фильтр</h3>
+            <p class="filter-block__description">Подберите алмазный бокс по параметрам</p>
+            <form class="filter-block__form" action="formdata" method="post" name="form1">
+              <div class="filter-block__select-box">
+                <span class="arrow"></span>
+                <select class="form-select" name="list1" id="list">
+                  <!-- autofocus???????? -->
+                  <option value="1">Цвет</option>
+                  <option value="2">Синий</option> 
+                  <option value="3">Красный</option> 
+                  <option value="4">Зеленый</option> 
+                  <option value="5">Желтый</option>   
+                </select>
+              </div>
+              
+              <div class="filter-block__select-box">
+                <span class="arrow"></span>
+                <select class="form-select" name="list1" id="list">
+                  <!--  -->
+                  <option value="1">Форма</option>
+                  <option value="2">Звезда</option> 
+                  <option value="3">Круг</option> 
+                  <option value="4">Квадрат</option> 
+                  <option value="5">Треугольник</option>   
+                </select>
+              </div>
+              
+              <div class="filter-block__select-box">
+                <span class="arrow"></span>
+                <select class="form-select" name="list1" id="list">
+                  <!--  -->
+                  <option value="1">Размер</option>
+                  <option value="2">Большой</option> 
+                  <option value="3">Средний</option> 
+                  <option value="4">Маленький</option> 
+                </select>
+              </div>
+              
+              <div class="filter-block__select-box">
+                <span class="arrow"></span>
+                <select class="form-select" name="list1" id="list">
+                  <!--  -->
+                  <option value="1">Флуоресц.</option>
+                  <option value="2">Светится</option> 
+                  <option value="3">Не светится</option> 
+                </select>
+              </div>
+            </form>
+            <button class="filter-block__button">Применить</button>
+          </div>
+          <div class="main__right-block">
+            <div class="box1__left-side">
+              <img class="box1-image" src="./assets/img/img1.jpg" alt="almaziki">
+              <button class="box1-button">Оформить</button>
+            </div>
+            <div class="box1__right-side">
+              <h3 class="box1-title">Бокс №1</h3>
+              <p class="box1-description">Максимальное содержимое</p>
+              <div class="columns-wrapper__df">
+                <div class="right-side__first-column">
+                  <!-- left side first column -->
+                  <ul class="first-column">
+                    <li class="first-column__item">
+                      <h4>Цвет</h4>
+                      <p class="grey-p">Красный <span class="progress-score">70%</span></p>
+                      <div class="progress-container">
+                        <div class="progress-bar color-p"></div>
+                      </div>
+                    </li>
+                    <li class="first-column__item">
+                      <h4>Размер</h4>
+                      <p class="grey-p">Средний <span class="progress-score">80%</span></p>
+                      <div class="progress-container">
+                        <div class="progress-bar medium-p"></div>
+                      </div>
+                    </li>
+                    <li class="first-column__item">
+                      <h4>Флуоресценция</h4>
+                      <p class="grey-p">Светится <span class="progress-score">80%</span></p>
+                      <div class="progress-container">
+                        <div class="progress-bar shine-p"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- right side second column -->
+                <div class="right-side__second-column">
+                  <ul class="second-column">
+                    <li class="second-column__item">
+                      <h4>Форма</h4>
+                      <p class="grey-p">Круг <span class="ball">60%</span></p>
+                      <div class="progress-container">
+                        <div class="progress-bar ball-p"></div>
+                      </div>
+                    </li>
+                    <li class="second-column__item end">
+                      <p class="grey-p">Вес</p>
+                      <span class="span-content">12356ct.</span>
+                    </li>
+                    <li class="second-column__item end">
+                      <p class="grey-p">Стоимость</p>
+                      <span class="span-content">12356у.е.</span>
+                    </li>
+                    <li class="second-column__item end">
+                      <p class="more">Подробнее</p>
+                      <span class="arrow-p"></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <!--  BLOCK with DIAGRAMMA -->
+        <div class="main__second-block">
+          <div class="top-block">
+            <ul class="top-block__colors">
+              <h3 class="top-block__items-title">Цвет</h3>
+              <li class="color blue">Синий</li>
+              <li class="color red">Красный </li>
+              <li class="color green">Зеленый </li>
+              <li class="color yellow">Желтый </li>
+            </ul>
+
+            <ul class="top-block__colors">
+              <h3 class="top-block__items-title">Форма</h3>
+              <li class="color blue">Звезда</li>
+              <li class="color red">Круг</li>
+              <li class="color green">Квадра</li>
+              <li class="color yellow">Треугольник</li>
+            </ul>
+
+            <ul class="top-block__colors">
+              <h3 class="top-block__items-title">Размер</h3>
+              <li class="color blue">Большой</li>
+              <li class="color red">Средний</li>
+              <li class="color green">Маленький</li>
+            </ul>
+
+            <ul class="top-block__colors">
+              <h3 class="top-block__items-title">Флуоресценция</h3>
+              <li class="color blue">Светится</li>
+              <li class="color red">Светится</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div style="height: 100rem;"></div>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>
