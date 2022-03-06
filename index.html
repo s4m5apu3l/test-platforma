@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TEST</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="favicon.png"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -24,7 +24,7 @@
           </svg>
         </div>
 
-        <div class="header-nav">
+        <nav class="header-nav">
           <ul class="header-nav__items">
             <li class="header-nav__item">
               <i class="nav-item__icon">
@@ -52,7 +52,12 @@
               </i>Войти</li>
             <li class="header-nav__item">RU</li>
           </ul>
+        </nav>
+
+        <div class="header__menu-burger">
+          <div class="menu-burger__btn"></div>
         </div>
+
       </div>
     </header>
     <main class="main">
@@ -70,10 +75,10 @@
               </i>
               Фильтр</h3>
             <p class="filter-block__description">Подберите алмазный бокс по параметрам</p>
-            <form class="filter-block__form" action="formdata" method="post" name="form1">
+            <div class="filter-block__form" >
               <div class="filter-block__select-box">
                 <span class="arrow"></span>
-                <select class="form-select" name="list1" id="list">
+                <select class="form-select" name="list1">
                   <!-- autofocus???????? -->
                   <option value="1">Цвет</option>
                   <option value="2">Синий</option> 
@@ -85,7 +90,7 @@
               
               <div class="filter-block__select-box">
                 <span class="arrow"></span>
-                <select class="form-select" name="list1" id="list">
+                <select class="form-select" name="list1">
                   <!--  -->
                   <option value="1">Форма</option>
                   <option value="2">Звезда</option> 
@@ -97,7 +102,7 @@
               
               <div class="filter-block__select-box">
                 <span class="arrow"></span>
-                <select class="form-select" name="list1" id="list">
+                <select class="form-select" name="list1">
                   <!--  -->
                   <option value="1">Размер</option>
                   <option value="2">Большой</option> 
@@ -108,14 +113,14 @@
               
               <div class="filter-block__select-box">
                 <span class="arrow"></span>
-                <select class="form-select" name="list1" id="list">
+                <select class="form-select" name="list1">
                   <!--  -->
                   <option value="1">Флуоресц.</option>
                   <option value="2">Светится</option> 
                   <option value="3">Не светится</option> 
                 </select>
               </div>
-            </form>
+            </div>
             <button class="filter-block__button">Применить</button>
           </div>
           <div class="main__right-block">
@@ -191,6 +196,15 @@
               <li class="color red">Красный </li>
               <li class="color green">Зеленый </li>
               <li class="color yellow">Желтый </li>
+
+              <div class="diagramma-block tablet-diagramma">
+                <svg class="diagramma" width="150" height="150" viewBox="0 0 50 50">
+                  <circle class="unit unit-first" r="18.9" cx="50%" cy="50%"></circle>
+                  <circle class="unit unit-first" r="18.9" cx="50%" cy="50%"></circle>
+                  <circle class="unit unit-first" r="18.9" cx="50%" cy="50%"></circle>
+                  <circle class="unit unit-first" r="18.9" cx="50%" cy="50%"></circle>
+                </svg>
+              </div>
             </ul>
 
             <ul class="top-block__colors">
@@ -199,6 +213,14 @@
               <li class="color red">Круг</li>
               <li class="color green">Квадра</li>
               <li class="color yellow">Треугольник</li>
+              <div class="diagramma-block tablet-diagramma">
+                <svg class="diagramma" width="150" height="150" viewBox="0 0 50 50">
+                  <circle class="unit unit-first" r="18.9" cx="50%" cy="50%"></circle>
+                  <circle class="unit unit-first" r="18.9" cx="50%" cy="50%"></circle>
+                  <circle class="unit unit-first" r="18.9" cx="50%" cy="50%"></circle>
+                  <circle class="unit unit-first" r="18.9" cx="50%" cy="50%"></circle>
+                </svg>
+              </div>
             </ul>
 
             <ul class="top-block__colors">
@@ -206,12 +228,25 @@
               <li class="color blue">Большой</li>
               <li class="color red">Средний</li>
               <li class="color green">Маленький</li>
+              <div class="diagramma-block tablet-diagramma">
+                <svg class="diagramma" width="150" height="150" viewBox="0 0 50 50">
+                  <circle class="unit unit-third" r="18.9" cx="50%" cy="50%"></circle>
+                  <circle class="unit unit-third" r="18.9" cx="50%" cy="50%"></circle>
+                  <circle class="unit unit-third" r="18.9" cx="50%" cy="50%"></circle>
+                </svg>
+              </div>
             </ul>
 
             <ul class="top-block__colors">
               <h3 class="top-block__items-title">Флуоресценция</h3>
               <li class="color blue">Светится</li>
               <li class="color red">Светится</li>
+              <div class="diagramma-block tablet-diagramma">
+                <svg class="diagramma" width="150" height="150" viewBox="0 0 50 50">
+                  <circle class="unit unit-fourth" r="18.9" cx="50%" cy="50%"></circle>
+                  <circle class="unit unit-fourth" r="18.9" cx="50%" cy="50%"></circle>
+                </svg>
+              </div>
             </ul>
           </div>
 
@@ -299,14 +334,17 @@
       </div>
       
     </main>
+
     <footer class="footer">
       <ul class="footer-items wrapper">
         <li class="footer-item">
           <h5 class="footer-item__title">Команда</h5>
           <div class="logo">
-            <svg class="logo">
-              <use xlink:href="./assets/svg/sprite.svg#logo"></use>
-            </svg>
+            <a href="https://platforma.bz/#welcome" target="_blank">
+              <svg class="logo">
+                <use xlink:href="./assets/svg/sprite.svg#logo"></use>
+              </svg>
+              </a>
           </div>
         </li>
         <li class="footer-item">
@@ -331,5 +369,7 @@
         </li>
       </ul>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>
