@@ -783,6 +783,10 @@ li {
   .footer-items {
     gap: 9px;
   }
+
+  .progress-container {
+    max-width: 204px;
+  }
 }
 
 @media (max-width: 768px) {
