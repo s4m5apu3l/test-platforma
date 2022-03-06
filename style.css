@@ -3,11 +3,16 @@
   --color-blue2:#0B77EF;
   --color-blue3: #469AF7;
 
-  --color-white1: #fff;
   --color-black1: #000;
+  --color-black2: #242e40;
+  --color-black3: #001833;
+
+
+  --color-white1: #fff;
   --color-white2: #75b3f7;
   --color-white3-form: #eff3f3;
-  --color-black2: #242e40;
+  --color-white4-footer: #4D657F;
+
   --color-grey1: #c0c0c0;
   --color-grey2: #929292;
 }
@@ -79,7 +84,10 @@ li {
 
 .main {
   background-color: #e5e5e5;
-  padding-left: 20px;
+  /* padding-left: 20px; */
+}
+.main-wrapper {
+  padding-left: 11px;
 }
 
 .main__first-block {
@@ -237,7 +245,7 @@ li {
 .box1__left-side {
   display: flex;
   flex-direction: column;
-  padding: 30px 20px 20px 20px;
+  padding: 30px 20px 20px 30px;
 
 }
 
@@ -492,3 +500,161 @@ h4 {
   margin-left: 39px;
 }
 
+/* DIAGRAMMS */
+.lower-block__diagramma {
+  display: flex;
+  padding-left: 100px;
+  gap: 14.5%;
+  position: relative;
+}
+
+.diagramma {
+  max-width: 200px;
+}
+
+.unit {
+  fill: none;
+  stroke-width: 11.5;
+  cursor: pointer;
+}
+
+.unit:nth-child(1) {
+  stroke: #0E6FE2;
+}
+
+.unit:nth-child(2) {
+  stroke: #00A556;
+  stroke-dasharray: 32 100;
+  stroke-dashoffset: -39;
+}
+
+.unit:nth-child(3) {
+  stroke: #FF3D00;
+  stroke-dasharray: 11 100;
+  stroke-dashoffset: -70;
+}
+
+.unit:nth-child(4) {
+  stroke: #F6D43E;
+  stroke-dasharray: 9 100;
+  stroke-dashoffset: -80;
+}
+
+.unit-third:nth-child(3) {
+  stroke: #FF3D00;
+  stroke-dasharray: 16 100;
+  stroke-dashoffset: -71;
+}
+
+.unit-fourth:nth-child(1) {
+  stroke: #0E6FE2;
+}
+
+.unit-fourth:nth-child(2) {
+  stroke: #00A556;
+  stroke-dasharray: 49 100;
+  stroke-dashoffset: -39;
+}
+
+.close {
+  display: block;
+  position: absolute;
+  bottom: -43px;
+  right: 50px;
+  color: #469AF7;
+  letter-spacing: 0;
+}
+.arrow-q {
+  width: 14px;
+  height: 8px;
+  position: absolute;
+  bottom: -35px;
+  right: 20px;
+  background: url(./assets/img/more-ic.png) no-repeat;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+/* _________lower block with BOXS_________ */
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+.third-block__bg {
+  background-color: var(--color-white1);
+  margin-top: 40px;
+  padding-bottom: 85px;
+}
+
+.main__third-block {
+  padding: 37px 0 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.mini-block {
+  width: 240px;
+  height: 150px;
+  background: url(./assets/img/Бокс\ 1.png) no-repeat;
+  padding: 1px 0 0 20px;
+
+}
+
+.third-block__title {
+  width: 100%;
+}
+
+.mini-block__title {
+  color: var(--color-white2);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 23px;
+}
+
+.mini-block__number {
+  color: var(--color-white1);
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 59px;
+}
+
+/* __________FOOOTERERR_________ */
+
+.footer {
+  background: var(--color-black3);
+  height: 300px;
+  width: 100%;
+}
+
+.footer-items {
+  display: flex;
+  gap: 40px;
+
+  color: var(--color-white4-footer);
+  padding: 41px 0 0 10px;
+  letter-spacing: 0;
+}
+
+.footer-item__title {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0;
+  padding-right: 55px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  width: 230px;
+  height: 35px;
+  padding-top: 5px;
+}
+
+.footer-item__p {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+line-height: 23px;
+}
